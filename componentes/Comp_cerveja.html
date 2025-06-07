@@ -14,26 +14,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px;
+        margin: 20px auto;
+      }
+      .object-contain {
+        object-fit: contain;
+      }
+      .vw {
+        width: 25%;
       }
     </style>
   </head>
   <body>
-    <div class="card text-center p-3" style="width: 18rem; border-radius: 1rem">
+    <div class="card text-center p-3 border-0 rounded-4 vw">
       <img
-        src="../imagens/imagem_heineken.png"
-        class="card-img-top"
+        src="https://brewdog.com/cdn/shop/files/pdp-cold-beer-440ml-can-brewdog.jpg?v=1742984462&width=493"
+        class="card-img-top rounded-4 mh-auto object-contain"
         alt="Cold Beer Lager"
-        style="max-height: 250px; object-fit: contain"
       />
       <div class="card-body">
-        <h5 class="card-title">Cold Beer Lager</h5>
-        <p class="card-text fw-semibold">R$ 15,00</p>
+        <h4 class="card-title">Cold Beer Lager</h4>
+        <h6 class="card-text fw-semibold mb-3">R$ 15,00</h6>
 
-        <div class="d-flex justify-content-center gap-2 mb-3 text-muted">
-          <small>3.4%</small>
-          <small>Lager</small>
-          <small>440ml</small>
+        <div class="d-flex justify-content-center gap-5 text-muted">
+          <p>3.4%</p>
+          <p>Lager</p>
+          <p>440ml</p>
         </div>
 
         <div class="d-grid gap-2">
